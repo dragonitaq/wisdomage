@@ -1,0 +1,76 @@
+:root {
+  --color-text-grey: #f7f7f7;
+  --color-primary: #b514ac;
+  --color-secondary: #dd77d7;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #000;
+}
+
+::selection {
+  background-color: var(--color-primary);
+  color: var(--color-secondary);
+}
+
+.hero {
+  text-align: center;
+  position: relative;
+}
+
+.company__logo {
+  width: 13rem;
+  height: 13rem;
+  margin-top: 1.2rem;
+}
+
+.company__title {
+  color: var(--color-text-grey);
+  font-size: 4rem;
+}
+
+.company__slogan {
+  color: var(--color-text-grey);
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+/* Note: z-index only works on positioned elements (position:absolute, position:relative, or position:fixed). */
+.hero-image__left {
+  position: relative;
+  z-index: 1;
+  width: 50rem;
+}
+
+.hero-image__right--wrapper {
+  display: inline-block;
+  position: relative;
+}
+
+.hero-image__right {
+  position: relative;
+  margin-left: -8rem;
+  height: 36rem;
+}
+
+.hero-text {
+  color: var(--color-primary);
+  font-size: 3rem;
+  position: absolute;
+  top: -4rem;
+  right: 2rem;
+}
