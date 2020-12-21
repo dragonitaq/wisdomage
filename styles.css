@@ -27,6 +27,10 @@ body {
   color: var(--color-secondary);
 }
 
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+/*                               Hero                               */
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
 .hero {
   text-align: center;
   position: relative;
@@ -76,6 +80,10 @@ body {
   right: 2rem;
 }
 
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+/*                               About                              */
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
 .about {
   display: flex;
   justify-content: center;
@@ -113,4 +121,281 @@ body {
 .hrdf {
   width: 20rem;
   height: auto;
+}
+
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+/*                        Simulation Training                       */
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+.simulation-training {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem;
+}
+
+.simulation__title {
+  color: var(--color-primary);
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+}
+
+.simulation__subtitle {
+  color: var(--color-text-grey);
+  width: 50rem;
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+.simulation__description {
+  display: flex;
+  justify-content: center;
+  margin-top: 4rem;
+}
+
+.simulation__image {
+  width: 40rem;
+  height: auto;
+  margin-right: 4rem;
+}
+
+.simulation-program {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 40rem;
+  text-align: center;
+}
+
+.simulation-program__title {
+  color: var(--color-primary);
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.simulation-program__description {
+  color: var(--color-text-grey);
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.simulation-program__button {
+  background-color: var(--color-primary);
+  color: var(--color-text-grey);
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  border-radius: 5rem;
+  border: none;
+  font-size: 1.4rem;
+}
+
+.simulation-program__button:hover {
+  background-color: var(--color-secondary);
+  color: #000;
+}
+
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+/*                         Training programs                        */
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+.training-programs {
+  background-color: #202020;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem;
+}
+
+.training__title {
+  color: var(--color-primary);
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+}
+
+.training__subtitle {
+  color: var(--color-text-grey);
+  width: 50rem;
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+.training-description {
+  margin-top: 4rem;
+  display: flex;
+  align-items: center;
+}
+
+.training-program {
+  text-align: center;
+}
+
+.training-program__list {
+  color: var(--color-secondary);
+  font-size: 2rem;
+  list-style: none;
+}
+
+.training-program__list li {
+  margin-bottom: 1rem;
+}
+
+.training-program__list li:nth-child(even) {
+  color: var(--color-text-grey);
+}
+
+.training-program__list li:nth-child(odd) {
+  color: var(--color-secondary);
+}
+
+.contact-us {
+  background-color: var(--color-primary);
+  color: var(--color-text-grey);
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  border-radius: 5rem;
+  border: none;
+  font-size: 1.8rem;
+  margin-top: 2rem;
+}
+
+.contact-us:hover {
+  background-color: var(--color-secondary);
+  color: #000;
+}
+
+.training-image {
+  width: 40rem;
+  height: auto;
+  margin-left: 4rem;
+}
+
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+/*                              Clients                             */
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+.clients {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem;
+  padding-bottom: 5rem;
+}
+
+.clients__title {
+  color: var(--color-primary);
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  margin-bottom: 5rem;
+}
+
+.clients-content {
+  display: flex;
+  align-items: center;
+}
+
+.clients-logo {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+  align-items: center;
+  gap: 3rem;
+}
+
+.clients-logo > * {
+  width: 15rem;
+  height: auto;
+}
+
+.kossan {
+  width: 14rem;
+}
+
+.arlene {
+  width: 10rem;
+}
+
+.more {
+  color: var(--color-text-grey);
+  font-size: 1.6rem;
+  text-align: center;
+}
+
+.clients-image {
+  width: 45rem;
+  height: auto;
+  margin-left: 4rem;
+}
+
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+/*                              Contact                             */
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem;
+  background-color: #202020;
+}
+
+.contact__title {
+  color: var(--color-primary);
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  margin-bottom: 5rem;
+}
+
+.contact-content {
+  display: flex;
+  align-items: center;
+}
+
+.contact-image-left {
+  width: auto;
+  height: 45rem;
+  margin-right: -10rem;
+}
+
+.contact-detail {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-detail > p {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  width: 5rem;
+  margin-right: 2rem;
+}
+
+.name {
+  color: var(--color-text-grey);
+}
+
+.phone-number {
+  color: var(--color-text-grey);
+}
+
+.email {
+  color: var(--color-text-grey);
+}
+
+.contact-image-right {
+  width: auto;
+  height: 45rem;
+  margin-left: -10rem;
+}
+
+.copyright {
+  color: var(--color-text-grey);
+  font-size: 1rem;
+  margin-top: 2rem;
 }
