@@ -30,12 +30,13 @@ body {
 .hero {
   text-align: center;
   position: relative;
+  /* margin: 2rem auto 3rem; */
+  padding: 3rem;
 }
 
 .company__logo {
   width: 13rem;
   height: 13rem;
-  margin-top: 1.2rem;
 }
 
 .company__title {
@@ -73,4 +74,43 @@ body {
   position: absolute;
   top: -4rem;
   right: 2rem;
+}
+
+.about {
+  display: flex;
+  justify-content: center;
+  padding: 3rem;
+  background-color: #202020;
+}
+
+.about-image {
+  width: 30rem;
+  height: auto;
+  margin-right: 7rem;
+}
+
+.about-company {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 30rem;
+}
+
+.about-company__title {
+  color: var(--color-primary);
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.about-company__mission {
+  color: var(--color-text-grey);
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+.hrdf {
+  width: 20rem;
+  height: auto;
 }
