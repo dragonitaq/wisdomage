@@ -2,6 +2,7 @@
   --color-text-grey: #f7f7f7;
   --color-primary: #b514ac;
   --color-secondary: #dd77d7;
+  --color-background-darkgrey: #202020;
 }
 
 html {
@@ -35,7 +36,10 @@ body {
   text-align: center;
   position: relative;
   /* margin: 2rem auto 3rem; */
-  padding: 3rem;
+  padding-top: 3rem;
+  padding-bottom: 4rem;
+  box-shadow: 0px 5px 20px -2px #111111, 0px -5px 20px -2px #111111;
+  position: relative;
 }
 
 .company__logo {
@@ -78,6 +82,16 @@ body {
   position: absolute;
   top: -4rem;
   right: 2rem;
+  animation-name: breathing;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: cubic-bezier(0.1, 0.43, 0.23, 0.23);
+}
+
+@keyframes breathing {
+  50% {
+    transform: scale(1.5);
+  }
 }
 
 /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
@@ -87,8 +101,9 @@ body {
 .about {
   display: flex;
   justify-content: center;
-  padding: 3rem;
-  background-color: #202020;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  background-color: var(--color-background-darkgrey);
 }
 
 .about-image {
@@ -131,7 +146,10 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 3rem;
+  padding-top: 4rem;
+  padding-bottom: 5rem;
+  box-shadow: 0px 5px 20px -2px #111111, 0px -5px 20px -2px #111111;
+  position: relative;
 }
 
 .simulation__title {
@@ -201,11 +219,12 @@ body {
 /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
 
 .training-programs {
-  background-color: #202020;
+  background-color: var(--color-background-darkgrey);
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 3rem;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
 }
 
 .training__title {
@@ -280,8 +299,10 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 3rem;
-  padding-bottom: 5rem;
+  padding-top: 4rem;
+  padding-bottom: 6rem;
+  box-shadow: 0px 5px 20px -2px #111111, 0px -5px 20px -2px #111111;
+  position: relative;
 }
 
 .clients__title {
@@ -337,8 +358,9 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 3rem;
-  background-color: #202020;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  background-color: var(--color-background-darkgrey);
 }
 
 .contact__title {
