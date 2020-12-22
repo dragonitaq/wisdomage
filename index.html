@@ -5,26 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;700;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="styles.css" />
+    <link rel="shortcut icon" type="image/png" href="asset/wisdomage-favicon.png" />
     <title>WISDOM AGE</title>
   </head>
   <body>
     <section class="hero">
-      <div class="company">
+      <div class="company" data-aos="zoom-out-down" data-aos-once="true">
         <img src="asset/wisdomage.png" alt="Wisdom Age logo" class="company__logo" />
         <h1 class="company__title">WISDOM AGE</h1>
         <p class="company__slogan">INTRA & INTERPERSONAL INTELLIGENCE</p>
       </div>
       <div class="hero-image">
-        <img class="hero-image__left" src="asset/hero-left.svg" alt="Background image of man typing on laptop," />
-        <div class="hero-image__right--wrapper">
+        <img class="hero-image__left" src="asset/hero-left.svg" alt="Background image of man typing on laptop," data-aos="fade-right" />
+        <div class="hero-image__right--wrapper" data-aos="fade-left">
           <img class="hero-image__right" src="asset/hero-right.svg" alt="Background image of woman holding paper." />
           <p class="hero-text">Hi!</p>
         </div>
       </div>
     </section>
+
     <section class="about">
-      <img class="about-image" src="asset/about.svg" alt="Man looks at big screen statistics." />
+      <img class="about-image" src="asset/about.svg" alt="Man looks at big screen statistics." data-aos="zoom-in-right" />
       <div class="about-company">
         <h2 class="about-company__title">About</h2>
         <p class="about-company__mission">
@@ -33,33 +36,35 @@
         <img class="hrdf" src="asset/hrdf-claimable.svg" alt="HRDF claimable." />
       </div>
     </section>
+
     <section class="simulation-training">
       <h2 class="simulation__title">Simulation Training</h2>
-      <p class="simulation__subtitle">We are a small team of people in Malaysia who are passionate about creating simulation training.</p>
+      <p class="simulation__subtitle" data-aos="zoom-in-down" data-aos-once="true">We are a small team of people in Malaysia who are passionate about creating simulation training.</p>
       <div class="simulation__description">
-        <img class="simulation__image" src="asset/simulation-training.svg" alt="Two persons performing simulation training" />
+        <img class="simulation__image" src="asset/simulation-training.svg" alt="Two persons performing simulation training" data-aos="fade-up-right" />
         <div class="simulation-program">
           <div class="simulation-program__each">
             <h3 class="simulation-program__title">CAPTAIN'S LOG</h3>
             <p class="simulation-program__description">Challenge your leadership, strategy thinking, resource management and interdependency.</p>
-            <button class="simulation-program__button">Download Brochure</button>
+            <a class="simulation-program__button" target="_blank" href="https://1drv.ms/b/s!AjrZV0ig4Y3AhYVwSd4rH8z7FpLb2A?e=bQFRWA" rel="noopener noreferrer">Download Brochure</a>
           </div>
           <div class="simulation-program__each">
             <h3 class="simulation-program__title">IDEAPRENEUR PARK</h3>
             <p class="simulation-program__description">Challenge your business skills, dynamic thinking, analysis and communication skills.</p>
-            <button class="simulation-program__button">Download Brochure</button>
+            <a class="simulation-program__button" target="_blank" href="https://1drv.ms/b/s!AjrZV0ig4Y3AhYVsVodZvhbmICn7eg?e=DHFgeK" rel="noopener noreferrer">Download Brochure</a>
           </div>
           <div class="simulation-program__each">
             <h3 class="simulation-program__title">WIND OF CHANGE</h3>
             <p class="simulation-program__description">Challenge your change adaptiveness, sense of urgency, impact analysis and market responsiveness.</p>
-            <button class="simulation-program__button">Download Brochure</button>
+            <a class="simulation-program__button" target="_blank" href="https://1drv.ms/b/s!AjrZV0ig4Y3AhYVzUyEHJbJL1oVThA?e=F2fKCf" rel="noopener noreferrer">Download Brochure</a>
           </div>
         </div>
       </div>
     </section>
+
     <section class="training-programs">
       <h2 class="training__title">Training Programs</h2>
-      <p class="training__subtitle">We provide training programs that are highly demanded.</p>
+      <p class="training__subtitle" data-aos="zoom-in-down" data-aos-once="true">We provide training programs that are highly demanded.</p>
       <div class="training-description">
         <div class="training-program">
           <ul class="training-program__list">
@@ -73,9 +78,9 @@
             <li>&#10094; COMMUNICATION SKILLS &#10095;</li>
             <li>&#10094; PROBLEM SOLVING SKILLS &#10095;</li>
           </ul>
-          <button class="contact-us">Contact Us</button>
+          <a class="contact-us" href="#contact">Contact Us</a>
         </div>
-        <img class="training-image" src="asset/training-program.svg" alt="Two persons performing brain storming training" />
+        <img class="training-image" src="asset/training-program.svg" alt="Two persons performing brain storming training" data-aos="fade-up-left" />
       </div>
     </section>
 
@@ -93,25 +98,33 @@
           <p class="more">AND MORE...</p>
         </div>
         <div>
-          <img class="clients-image" src="asset/clients.svg" alt="Clients are shaking hands in agreement" />
+          <img class="clients-image" src="asset/clients.svg" alt="Clients are shaking hands in agreement" data-aos="fade-right" />
         </div>
       </div>
     </section>
 
-    <section class="contact">
+    <section class="contact" id="contact">
       <h2 class="contact__title">Contact</h2>
       <div class="contact-content">
-        <img class="contact-image-left" src="asset/contact-left.svg" alt="Man taking on phone" />
+        <img class="contact-image-left" src="asset/contact-left.svg" alt="Man taking on phone" data-aos="zoom-in-right" />
         <div class="contact-detail">
-          <p class="name"><img class="icon icon-name" src="asset/user-tie.svg" alt="User icon" />MR. KEVIN</p>
+          <p class="name"><img class="icon icon-name" src="asset/user-tie.svg" alt="User icon" />KEVIN</p>
 
-          <p class="phone-number"><img class="icon icon-mobile" src="asset/mobile.svg" alt="Mobile icon" />+6016-5675-721</p>
-          <p class="email"><img class=" icon icon-email" src="asset/envelop.svg" alt="Email icon" />kevin.wisdomage@gmail.com</p>
-          
+          <p class="phone-number"><img class="icon icon-mobile" src="asset/mobile.svg" alt="Mobile icon" />+6016-5675721</p>
+          <p class="email"><img class="icon icon-email" src="asset/envelop.svg" alt="Email icon" />kevin.wisdomage@gmail.com</p>
         </div>
-        <img class="contact-image-right" src="asset/contact-right.svg" alt="Leaves" />
+        <img class="contact-image-right" src="asset/contact-right.svg" alt="Leaves" data-aos="fade-left" />
       </div>
       <p class="copyright">Copyright &#169; Wisdom Age</p>
     </section>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        mirror: true,
+        duration: 500,
+        easing: 'ease-in-sine',
+      });
+    </script>
   </body>
 </html>
