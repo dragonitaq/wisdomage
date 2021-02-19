@@ -6,3 +6,4 @@ Technologies involved:
 
 - Animate On Scroll (AOS)
 - Google Analytics
+- Netlify Form
