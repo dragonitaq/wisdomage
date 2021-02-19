@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" prefix="og: https://ogp.me/ns#">
   <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-C3ZTEFFVYE"></script>
@@ -20,6 +20,17 @@
     <link rel="stylesheet" href="styles.css" />
     <link rel="shortcut icon" type="image/png" href="asset/wisdomage-favicon.png" />
     <title>WISDOM AGE</title>
+    <meta name="author" content="Kevin" />
+    <meta
+      name="description"
+      content="Wisdom age carries the mission to unleash and empower mankind’s intra & interpersonal intelligence. We aim to be premier in designing simulation training and game-based program."
+    />
+    <!-- Facebook Open Graph protocol -->
+    <meta property="og:title" content="Wisdom Age" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="http://wisdomage.netlify.app/" />
+    <meta property="og:image" content="https://wisdomage.netlify.app/asset/wisdomage.png" />
+    <meta property="og:image:alt" content="Wisdom Age company logo." />
   </head>
   <body>
     <section class="hero">
@@ -116,15 +127,18 @@
 
     <section class="contact" id="contact">
       <h2 class="contact__title">Contact</h2>
+
       <div class="contact-content">
         <img class="contact-image-left" src="asset/contact-left.svg" alt="Man taking on phone" data-aos="zoom-in-right" />
-        <div class="contact-detail">
-          <p class="name"><img class="icon icon-name" src="asset/user-tie.svg" alt="User icon" />KEVIN</p>
-          <p class="email"><img class="icon icon-email" src="asset/envelop.svg" alt="Email icon" />kevin.wisdomage@gmail.com</p>
-        </div>
+        <form class="contact-form" name="contact" method="POST" netlify-honeypot="bot-field" data-netlify="true">
+          <input type="text" id="name" name="name" placeholder="Name" required />
+          <input type="email" id="email" name="email" placeholder="Email" required />
+          <textarea id="msg" name="msg" rows="10" cols="50" placeholder="Message" required></textarea>
+          <button type="submit" class="submit">Send</button>
+        </form>
         <img class="contact-image-right" src="asset/contact-right.svg" alt="Leaves" data-aos="fade-left" />
       </div>
-      <p class="copyright">Copyright &#169; Wisdom Age</p>
+      <p class="copyright">&#169; Wisdom Age</p>
     </section>
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
